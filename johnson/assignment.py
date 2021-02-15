@@ -103,27 +103,45 @@
 
 
 
-import random
+# import random
 # r1 = int(input("insert your number  "))
 # while r1 > 0:
 #     r1 -=1
 #     r1 = random.randint(1, 6) 
 #     print(r1)
 # 
-while True :
-    input("PRESS ENTER TO DIAL")
-    die1 = random.randint(1,6)
-    die2 = random.randint(1,6)
+# while True :
+#     input("PRESS ENTER TO DIAL")
+#     die1 = random.randint(1,6)
+#     die2 = random.randint(1,6)
 
-    print("DIE 1- ", die1)
-    print("DIE 2- ", die2)
+#     print("DIE 1- ", die1)
+#     print("DIE 2- ", die2)
 
-    if die1 == die2 == 6 :
-        print("CONGRATULATIONS YOU GOT SIKI 2...!!!")
-        break
-    else:
-        print("SORRY TRY AGAIN...")
-        
+#     if die1 == die2 == 6 :
+#         print("CONGRATULATIONS YOU GOT SIKI 2...!!!")
+#         break
+#     else:
+#         print("SORRY TRY AGAIN...")
+
+
+
+print("write a python program that picks a number and make you guess. ")
+from random import randint
+choose = 1
+number = randint (1,80)
+choose = int(input("choose a number.  :"))
+while choose != number :
+    if choose < number :
+        print("your number too low")
+        choose = int(input("choose again  :"))
+        choose = choose + 1
+    elif  choose > number:
+        print("your number too high")
+        choose = int(input("choose a number  :"))
+        choose = choose + 1
+        print("congratulations, you chose right")
+        print("it only took you", choose,"chooses!")
 
 
 
