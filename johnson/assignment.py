@@ -126,22 +126,67 @@
 
 
 
-print("write a python program that picks a number and make you guess. ")
-from random import randint
-choose = 1
-number = randint (1,80)
-choose = int(input("choose a number.  :"))
-while choose != number :
-    if choose < number :
-        print("your number too low")
-        choose = int(input("choose again  :"))
-        choose = choose + 1
-    elif  choose > number:
-        print("your number too high")
-        choose = int(input("choose a number  :"))
-        choose = choose + 1
-        print("congratulations, you chose right")
-        print("it only took you", choose,"chooses!")
+# print("write a python program that picks a number and make you guess. ")
+# from random import randint
+# choose = 1
+# number = randint (1,80)
+# choose = int(input("choose a number.  :"))
+# while choose != number :
+#     if choose < number :
+#         print("your number too low")
+#         choose = int(input("choose again  :"))
+#         choose = choose + 1
+#     elif  choose > number:
+#         print("your number too high")
+#         choose = int(input("choose a number  :"))
+#         choose = choose + 1
+#         print("congratulations, you chose right")
+#         print("it only took you", choose,"chooses!")
+
+
+
+# a = 2
+# b = 1
+# while b > 0:
+#     b =+1
+#     result = (a*b)
+#     print(result)
+
+
+# Iterate 10 times from i = 1 to 10
+# Multiplication table (from 1 to 12)
+
+# num = 13
+
+
+# num = int(input("Display multiplication table of? "))
+# for i in range(1, 13):
+#    print(num, 'x', i, '|', num*i)
+
+
+#EVEN AND ODD NUMBERS
+import random
+number = int(input("please insert a number"))
+even_number = 0
+odd_number = 0
+for i in range(1,number+1):
+    remainder = number % 2
+    if remainder == 0:
+        even_number +=1
+        print(number)
+    
+   
+              
+       
+    
+
+
+
+
+
+
+
+
 
 
 

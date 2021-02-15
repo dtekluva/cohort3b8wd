@@ -44,15 +44,15 @@
 #     print(1)
 #     print(2)
 
-    a = 100
-    b = 50
-    m = a if b > 50 :
-    print(m)
+#     a = 100
+#     b = 50
+#     m = a if b > 50 :
+#     print(m)
 
-if a < b:
-    m = a
-else:
-    m = b
+# if a < b:
+#     m = a
+# else:
+#     m = b
 
  
 
@@ -62,7 +62,8 @@ else:
     # Y = int(input("please provide a number"))
     # if Y =
 
-
+a = 1
+print(a)
 
 
 
