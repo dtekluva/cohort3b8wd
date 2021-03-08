@@ -1,0 +1,1 @@
+cost_price = float(input('Enter your cost price: '))
