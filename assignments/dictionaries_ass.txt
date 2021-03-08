@@ -1,0 +1,32 @@
+Write a small program that takes in any sentence or speech and breaks down all the word into a dictionary containing the word as key and a list/dictionary of the length of the word, and number of vowels in the word
+Write a small program that takes in any sentence or 
+speech and breaks down all the word into a dictionary 
+containing the word as key and a 
+list/dictionary of the length of the word, 
+and number of vowels in the word
+
+
+example:
+
+input : "statistics and probabilty have made for discoveries"
+
+output:
+
+    {
+        "statistics": {
+            "length":10,
+            "vowels": 4
+        },
+        "and": {
+            "length":3,
+            "vowels": 1
+        },
+        "probability": {
+            "length":11,
+            "vowels": 4
+        },
+        "have": {
+            "length":4,
+            "vowels": 2
+        }
+    }
