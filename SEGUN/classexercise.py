@@ -67,7 +67,7 @@ employee1 = employee("Alex Dokubo", 35, "ADMIN", 400000, 2)
 employee2 = employee("bola adebiyi", 55, "ADMIN", 4900000, 2)
 employee1.describe()
 employee2.describe()
-print(employee1.yearly_bonus())
+print(employee1.yearly_bonus() )
 print(employee2.yearly_bonus()) 
 
 
