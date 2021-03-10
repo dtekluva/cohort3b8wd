@@ -19,3 +19,6 @@ myownlist = [1,10,00,384,5,7,5,4,3,3,3,2,2,]
 
 mf = Ssorted()
 mf.bobblesort()
+
+
+
