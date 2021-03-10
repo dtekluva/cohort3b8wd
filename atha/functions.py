@@ -197,29 +197,29 @@
 
 # return_greeting("ade")
 
-def make_bold(fn):
-    def wrapped():
-        return "<b>" + fn() + "</b>"
-    return wrapped
+# def make_bold(fn):
+#     def wrapped():
+#         return "<b>" + fn() + "</b>"
+#     return wrapped
 
-def make_italic(fn):
-    def wrapped():
-        return "<i>" + fn() + "</i>"
-    return wrapped
+# def make_italic(fn):
+#     def wrapped():
+#         return "<i>" + fn() + "</i>"
+#     return wrapped
 
-def make_underline(fn):
-    def wrapped():
-        return "<u>" + fn() + "</u>"
-    return wrapped
+# def make_underline(fn):
+#     def wrapped():
+#         return "<u>" + fn() + "</u>"
+#     return wrapped
 
-@make_italic
-@make_bold
-@make_underline
-def hello():
-    return "hello world"
+# @make_italic
+# @make_bold
+# @make_underline
+# def hello():
+#     return "hello world"
 
 
-open("x.html","w").write(hello()) ## returns "<b><i><u>hello world</u></i></b>"
+# open("x.html","w").write(hello()) ## returns "<b><i><u>hello world</u></i></b>"
 
 
 # def input_must_be_int(decorated_func):
@@ -298,3 +298,38 @@ open("x.html","w").write(hello()) ## returns "<b><i><u>hello world</u></i></b>"
 #     return {"user":username, "pass":password}
 
 # print(set_password("atha", "selense"))
+
+
+def mergeSort(nlist):
+    print("Splitting ",nlist)
+    if len(nlist)>1:
+        mid = len(nlist)//2
+        lefthalf = nlist[:mid]
+        righthalf = nlist[mid:]
+
+        mergeSort(lefthalf)
+        mergeSort(righthalf)
+        i=j=k=0       
+        while i < len(lefthalf) and j < len(righthalf):
+            if lefthalf[i] < righthalf[j]:
+                nlist[k]=lefthalf[i]
+                i=i+1
+            else:
+                nlist[k]=righthalf[j]
+                j=j+1
+            k=k+1
+
+        while i < len(lefthalf):
+            nlist[k]=lefthalf[i]
+            i=i+1
+            k=k+1
+
+        while j < len(righthalf):
+            nlist[k]=righthalf[j]
+            j=j+1
+            k=k+1
+    print("Merging ",nlist)
+
+nlist = [7,6,5,4,3,2]
+mergeSort(nlist)
+print(nlist)
