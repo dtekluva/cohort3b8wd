@@ -101,7 +101,12 @@ class employee(european):
         print("i earn a total of",self.salary, "monthly and")
         print("i work in",self.dept,"of telly4africa media")
 
-teanm=employee("segun", 34, 20000, "HR")
-teanm.describe()
+teanm1=employee("kinging aderibigbe",34, 20000, "HR")
+team2 = employee("omotayo ayodeji",46,"admin",30987)
+
+teanm1.describe()
+
+team2.describe()
+
 
     
