@@ -1,0 +1,26 @@
+##### CREATE A DATABASE CALLED STORE
+CREATE database store
+
+#### SELECT ALL COLUMNS FROM A TABLE CALLED cohort4norm
+
+SELECT * FROM `cohort4norm`
+
+######## CREATE A TABLE WITH THE NAME PRODUCTS THAT HAS A PRIMARY KEY ID
+
+CREATE TABLE products (id INT(3) PRIMARY KEY AUTO_INCREMENT NOT NULL, 
+                        name CHAR(50), 
+                        qty INT(5), 
+                        price INT(5)
+                        )
+
+### CREATE A TABLE TRANSACTIONS WITH FOREIGN_KEY RELATIONSHIP TO PRODUCT AND CUSTOMER
+
+CREATE TABLE transactions (id INT(3) PRIMARY KEY AUTO_INCREMENT NOT NULL, 
+                       			customer_id INT(5),
+                       			product_id INT(5),
+                       			qty INT(5), 
+                       			_date DATE(),
+                          		FOREIGN_KEY (customer_id) REFERENCES customers(id),
+                           		FOREIGN_KEY (product_id) REFERENCES products(id)
+                          )
+
