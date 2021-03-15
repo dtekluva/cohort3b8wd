@@ -66,5 +66,13 @@ SELECT * FROM `customers`
 INSERT INTO products (name, price, qty) VALUES("shoes", 500, 6)
 INSERT INTO products (name, price, qty) VALUES("bags", 1400, 5)
 SELECT * FROM `products`
-Expand Requery Edit Explain Profiling Bookmark Database : store Queried time : 15:38:44
 SELECT * FROM `customers`
+
+INSERT INTO products (name, price, qty) VALUES("shoes", 500, 6)
+INSERT INTO products (name, price, qty) VALUES("bags", 1400, 5)
+SELECT * FROM `products`
+SELECT * FROM `customers`
+INSERT INTO products (name, price, qty) VALUES("bags", 1400, 5), ("perfume", 1222, 3)
+SELECT * FROM `products`
+INSERT INTO transactions (customer_id, product_id, qty, _date) VALUES(1, 2, 5, "2020-03-15"), (2, 2, 4, "2020-04-15"), (1, 1, 1, "2020-03-16")
+SELECT * FROM `transactions`
