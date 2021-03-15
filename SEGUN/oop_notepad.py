@@ -53,9 +53,11 @@ class StatementMan():
         self.get_numeric_cols()
 
     def filter(self):
+
         pass
 
     def split(self):
+
         pass
 
 statement = StatementMan(file_name="C:/Users/kboys/OneDrive/Desktop/CLASSES/UNIVELCITY CLASSES/cohort3b8wd/atha/oop_notepad/Book1.csv")

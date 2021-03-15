@@ -105,7 +105,6 @@ teanm1=employee("kinging aderibigbe",34, 20000, "HR")
 team2 = employee("omotayo ayodeji",46,"admin",30987)
 
 teanm1.describe()
-
 team2.describe()
 
 
