@@ -1,0 +1,4 @@
+####
+In the store database created try to pull out the transactions such that the result carries the actual names and details of products and customers instead of the FOREIGN_KEY id. 
+
+NOTE*** This can be achieved using the join keyword.
