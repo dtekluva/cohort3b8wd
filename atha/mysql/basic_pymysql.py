@@ -35,25 +35,51 @@ cursor = db.cursor()
 #                 )
 
 # cursor.close()
+# data = {
+#     "name":"Ade kunle", "age":20, "sex": "male", "pay":3000,
+#     "name":"Mistura Saka", "age":30, "sex": "female", "pay":4000,
+# }
+# for i in range(26):
 
-for i in range(26):
-
-    # Prepare SQL query to INSERT a record into the database.
-    sql = """INSERT INTO EMPLOYEE(FIRST_NAME,
-    LAST_NAME, AGE, SEX, INCOME)
-    VALUES ('Mac', 'Mohan', 20, 'M', 2000)"""
+#     # Prepare SQL query to INSERT a record into the database.
+#     sql = """INSERT INTO EMPLOYEE(FIRST_NAME,
+#     LAST_NAME, AGE, SEX, INCOME)
+#     VALUES ('Mac', 'Mohan', 20, 'M', 2000)"""
     
+#     # Prepare SQL query to INSERT a record into the database.
+#     sqel = """INSERT INTO EMPLOYEE(FIRST_NAME,
+#     LAST_NAME, AGE, SEX, INCOME)
+#     VALUES ('john', 'Ham', 30, 'M', 8000)"""
+
+#     try:
+#     # Execute the SQL command
+#         cursor.execute(sql)
+#         cursor.execute(sqel)
+#         # Commit your changes in the database
+#         db.commit()
+#     except:
+#         # Rollback in case there is any error
+#         db.rollback()
+
+data = [
+    {"name":"Ade kunle", "age":20, "sex": "male", "pay":3000},
+    {"name":"Mistura Saka", "age":30, "sex": "female", "pay":4000},
+    {"name":"John Stan", "age":40, "sex": "Male", "pay":3500}
+]
+
+for entry in data:
+    
+    print(entry)
     # Prepare SQL query to INSERT a record into the database.
-    sqel = """INSERT INTO EMPLOYEE(FIRST_NAME,
+    sql = f"""INSERT INTO EMPLOYEE(FIRST_NAME,
     LAST_NAME, AGE, SEX, INCOME)
-    VALUES ('john', 'Ham', 30, 'M', 8000)"""
+    VALUES ('{entry["name"].split(" ")[0]}', '{entry["name"].split(" ")[1]}', {entry["age"]}, '{entry["sex"]}', {entry["pay"]})"""
 
     try:
     # Execute the SQL command
         cursor.execute(sql)
-        cursor.execute(sqel)
         # Commit your changes in the database
         db.commit()
-    except:
+    except SyntaxError:
         # Rollback in case there is any error
         db.rollback()
