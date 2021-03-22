@@ -28,7 +28,7 @@ CREATE TABLE transactions (id INT(3) PRIMARY KEY AUTO_INCREMENT NOT NULL,
 
 INSERT INTO transactions (customer_id, product_id, qty, _date) VALUES(1, 2, 5, "2020-03-15"), (2, 2, 4, "2020-04-15"), (1, 1, 1, "2020-03-16")
 
-
+FIRST_NAME, LAST_NAME, AGE, SEX and INCOME
 ############ CLASS COMMANDS
 
 drop database univelcity
@@ -76,3 +76,12 @@ INSERT INTO products (name, price, qty) VALUES("bags", 1400, 5), ("perfume", 122
 SELECT * FROM `products`
 INSERT INTO transactions (customer_id, product_id, qty, _date) VALUES(1, 2, 5, "2020-03-15"), (2, 2, 4, "2020-04-15"), (1, 1, 1, "2020-03-16")
 SELECT * FROM `transactions`
+
+
+### GET TOTAL NUMBER OF PURCHASES, AND NUMBER OF TIMES PURCHASE WAS MADE FOR EACH ITEM IN TABLE AND JOIN THE CORRESPONDING PRODUCT NAME FROM THE PRODUCTS TABLE (W3SHOOLS DATABASE.)
+
+SELECT ProductName, SUM(Quantity) AS TOTAL, COUNT(ProductName) AS PURCHASES FROM (SELECT * FROM OrderDetails
+JOIN Products AS T
+On T.ProductID = OrderDetails.ProductID)
+GROUP BY ProductName
+ORDER BY SUM(Quantity) DESC;
