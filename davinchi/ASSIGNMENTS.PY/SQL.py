@@ -1,15 +1,14 @@
-#!/usr/bin/python3
 
-import pymysql
+# import pymysql
 
-# Open database connection
-db = pymysql.connect(host='localhost',
-                    user='root',
-                    password='',
-                    database='store',
-                    cursorclass=pymysql.cursors.DictCursor)
+# # Open database connection
+# db = pymysql.connect(host='localhost',
+#                     user='root',
+#                     password='',
+#                     database='store',
+#                     cursorclass=pymysql.cursors.DictCursor)
 
-# prepare a cursor object using cursor() method
+# # prepare a cursor object using cursor() method
 # cursor = db.cursor()
 
 # # execute SQL query using execute() method.
@@ -23,7 +22,7 @@ db = pymysql.connect(host='localhost',
 # db.close()
 
 
-cursor = db.cursor()
+# cursor = db.cursor()
 
 # cursor.execute("""CREATE TABLE EMPLOYEE (
 #                 id INT(3) PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -55,7 +54,7 @@ cursor = db.cursor()
 #     # Execute the SQL command
 #         cursor.execute(sql)
 #         cursor.execute(sqel)
-#         # Commit your changes in the database
+#         Commit your changes in the database
 #         db.commit()
 #     except:
 #         # Rollback in case there is any error
@@ -84,32 +83,39 @@ cursor = db.cursor()
 #         # Rollback in case there is any error
 #         db.rollback()
 
-
 import pandas as pd
 import pyodbc
+import pymysql
 
 # Import CSV
-data = pd.read_csv (r'C:\Users\Ron\Desktop\Test\People.csv')   
-df = pd.DataFrame(data, columns= ['Name','Country','Age'])
+data = pd.read_csv (r'application_data.csv')   
+df = pd.DataFrame(data, columns= ['customerID','loanId','appilcationDate','LoanNumber','LoanAmount','InterestRate','TermDays','repaymentDueDate','repaymentPaidDate'])
 
 # Connect to SQL Server
-conn = pyodbc.connect('Driver={SQL Server};'
-                      'Server=RON\SQLEXPRESS;'
-                      'Database=TestDB;'
-                      'Trusted_Connection=yes;')
+db = pymysql.connect(host='localhost',
+                    user='root',
+                    password='',
+                    database='vinchy',
+                    cursorclass=pymysql.cursors.DictCursor)
 cursor = conn.cursor()
 
 # Create Table
-cursor.execute('CREATE TABLE people_info (Name nvarchar(50), Country nvarchar(50), Age int)')
+cursor.execute('CREATE TABLE table_info(customerID CHAR(10),loanId INT(5), appilcationDate CHAR(10), LoanNumber INT(10), LoanAmount INT(10), InterestRate INT(2), TermDays CHAR(5), repaymentDueDate CHAR(10), repaymentPaidDate CHAR(10))) 
 
 # Insert DataFrame to Table
 for row in df.itertuples():
     cursor.execute('''
-                INSERT INTO TestDB.dbo.people_info (Name, Country, Age)
-                VALUES (?,?,?)
+                INSERT INTO TestDB.dbo.table_info (customerID, loanId, appilcationDate, LoanNumber, LoanAmount, InterestRate, TermDays, repaymentDueDate, repaymentPaidDate)
+                VALUES (?,?,?,?,?,?,?,?,?)
                 ''',
-                row.Name, 
-                row.Country,
-                row.Age
+                row.customerID, 
+                row.loanId,
+                row.appilcationDate
+                row.LoanNumber
+                row.LoanAmount
+                row.InterestRate
+                row.TermDays
+                row.repaymentDueDate,
+                row.repaymentPaidDate
                 )
 conn.commit()
