@@ -1,0 +1,13 @@
+####
+In the store database created try to pull out the transactions such that the result carries the actual names and details of products and customers instead of the FOREIGN_KEY id. 
+
+NOTE*** This can be achieved using the join keyword.
+
+
+################ 17-03-2021 ##################
+
+Please take the csv file called applicantion_data.csv and migrate its contents into the database using python. 
+
+**Note: Create a new database with the appropriate schema.
+
+Thank you.!!
