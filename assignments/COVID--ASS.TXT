@@ -1,0 +1,1 @@
+Please continue on the covid 19 jupyter notebook, extend thescript such that it can print out a table showing the average deaths and cases for a particular country and the day with the lowest and highest values for any country name inputed by a user.
