@@ -1,6 +1,15 @@
 from dbmanager import Db_Guru
 
-guru = Db_Guru("localhost", "root", "todo") # CREATE AN INSTANCE OUR DB_MANAGER CLASS WHICH WOULD BE USED FOR ALL INTERACTIONS
+
+# username = doadmin
+# password = yl3n3b1wwbi2qtcd hide
+# host = db-mysql-nyc3-47818-do-user-4304571-0.b.db.ondigitalocean.com
+# port = 25060
+# database = defaultdb
+# sslmode = REQUIRED
+
+
+guru = Db_Guru("104.248.234.43", "monty", "todo", password="19Sedimat@54") # CREATE AN INSTANCE OUR DB_MANAGER CLASS WHICH WOULD BE USED FOR ALL INTERACTIONS
 logged_in_user = None # GLOBAL VARIABLE TO HOUSE USER DETAILS WHEN SUCCESSFULLY LOGGED IN, VALUE IS EMPTY AT FIRST AND DATA IS ASSIGNED WHEN A SUCCESSFUL LOGGIN OCCURS.
 
 def login(name, password): 
