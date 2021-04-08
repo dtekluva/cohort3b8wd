@@ -1,13 +1,13 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+# <<<<<<< HEAD
+# <<<<<<< HEAD
 # from time import sleep
 # from winsound import Beep
 # import winsound
-=======
+#=======
 from time import sleep
 from winsound import Beep
 import winsound
->>>>>>> atha
+# >>>>>>> atha
 
 # ONLY SECONDS COUNT DOWN TIMER
 
@@ -16,23 +16,24 @@ import winsound
 # while required_time > 0:
 
 #     required_time -= 1
-#     print(required_time, "seconds")
+#     print(required_time, "seconds", sep=" ",  end = '')
 #     sleep(1)
-=======
+#     print("\r",end="")
+# =======
 from time import sleep
 from winsound import Beep
 import winsound
 
 #ONLY SECONDS COUNT DOWN TIMER
 
-required_time = int(input("Enter time in seconds > "))
+# required_time = int(input("Enter time in seconds > "))
 
-while required_time > 0:
+# while required_time > 0:
 
-    required_time -= 1
-    print(required_time, "seconds")
-    sleep(1)
->>>>>>> 121d033ab75b809b7d806bb7f067c62bb5e69727
+#     required_time -= 1
+#     print(required_time, "seconds")
+#     sleep(1)
+# >>>>>>> 121d033ab75b809b7d806bb7f067c62bb5e69727
 
 
 # MINUTES AND SECONDS COUNTDOWN.
@@ -49,6 +50,7 @@ while required_time > 0:
 #         seconds -= 1
 #         print(f"{minutes}:{seconds}")
 #         sleep(1)
+        
 
 
 # # MINUTES AND SECONDS COUNTDOWN PRINT ON SAME LINE.
@@ -57,17 +59,17 @@ while required_time > 0:
 
 # while minutes > 0:
 
-#     seconds = 60
-#     minutes -= 1
+    # seconds = 60
+    # minutes -= 1
 
-#     while seconds > 0:
+    # while seconds > 0:
 
-#         seconds -= 1
-#         print(f"{minutes}:{seconds}  ", sep="",  end = '')
-#         sleep(1)
-#         print("\r",end="")
+    #     seconds -= 1
+    #     print(f"{minutes}:{seconds}  ", sep="",  end = '')
+    #     sleep(1)
+    #     print("\r",end="")
     
-#     Beep(1000, 200)
+    # Beep(1000, 200)
 
 
 # HOURS, MINUTES AND SECONDS COUNTDOWN PRINT ON SAME LINE.
@@ -111,29 +113,29 @@ while required_time > 0:
 # dice_roll
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-import random
+# <<<<<<< HEAD
+# <<<<<<< HEAD
+# import random
 
-while True:
+# while True:
 
-    input("PRESS ENTER TO ROLL")
+#     input("PRESS ENTER TO ROLL")
 
-    die1 = random.randint(1,6)
-    die2 = random.randint(1,6)
+#     die1 = random.randint(1,6)
+#     die2 = random.randint(1,6)
 
-    print("DIE 1- ", die1)
-    print("DIE 2- ", die2)
+#     print("DIE 1- ", die1)
+#     print("DIE 2- ", die2)
 
 
-    if die1 == die2 == 6:
-        print("CONGRATULATIONS YOU GOT SIKI 2..!!!")
-        break
-    else:
-        print("Sorry Try again..!!!")
-=======
-=======
->>>>>>> 121d033ab75b809b7d806bb7f067c62bb5e69727
+#     if die1 == die2 == 6:
+#         print("CONGRATULATIONS YOU GOT SIKI 2..!!!")
+#         break
+#     else:
+#         print("Sorry Try again..!!!")
+# =======
+# =======
+# >>>>>>> 121d033ab75b809b7d806bb7f067c62bb5e69727
 # import random
 
 # while True:
@@ -154,25 +156,27 @@ while True:
 #         print("Sorry Try again..!!!")
 
 
-<<<<<<< HEAD
+# <<<<<<< HEAD
 # # Multiplication table 
-=======
+# =======
 # Multiplication table 
->>>>>>> 121d033ab75b809b7d806bb7f067c62bb5e69727
+# >>>>>>> 121d033ab75b809b7d806bb7f067c62bb5e69727
 # multiple = 2
 # multiplier = 1
-# max_multiplier = 12
+# max_multiplier = 13
 
 # while multiplier < max_multiplier:
 
-#      print(f"{multiple} x {multiplier}".ljust(10), "|", multiplier * multiple)
+#      print(f"{multiple} x {multiplier}".ljust(6), "=", multiplier * multiple)
 #      multiplier += 1
+#      sleep(1)
 
-<<<<<<< HEAD
+
+# <<<<<<< HEAD
 # long multiplication
-=======
+# =======
  # long multiplication
->>>>>>> 121d033ab75b809b7d806bb7f067c62bb5e69727
+# >>>>>>> 121d033ab75b809b7d806bb7f067c62bb5e69727
 
 # for i in range(1,12):
 #     for n in range(1,5):
@@ -198,7 +202,7 @@ while True:
 
 # FOR LOOPS
 
-<<<<<<< HEAD
+# <<<<<<< HEAD
 # ODD AND EVEN NUMBERS.
 
 # number = int(input("Enter a number : "))
@@ -268,10 +272,10 @@ while True:
 
 # print(f"Number of {target_char} in {word} - ", count)
 
-word = input("Please enter word : ")
-target_char = input("Please enter character : ")
+# word = input("Please enter word : ")
+# target_char = input("Please enter character : ")
 
-print(word.count(target_char))
->>>>>>> atha
-=======
->>>>>>> 121d033ab75b809b7d806bb7f067c62bb5e69727
+# print(word.count(target_char))
+# >>>>>>> atha
+# =======
+# >>>>>>> 121d033ab75b809b7d806bb7f067c62bb5e69727

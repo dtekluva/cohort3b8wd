@@ -18,11 +18,11 @@
 
 # print("I am not controlled by the if 'MWAHAHAHAHAH'!!!")
 
-# # input("Define a noun ? > ")
+# input("Define a noun ? > ")
 
 # age = int(input("PLease enter your age : > "))
 
-# answer= "Old enough" if age > 18 else "Still too young"
+# answer = "Old enough too vote" if age >= 18 else "Still too young to vote"
 # print(answer)
 
 
@@ -66,16 +66,6 @@
 # else:
 #     print("No profit or loss recorded.!!")
 
-<<<<<<< HEAD
-# x = 3
-
-# s = ('foo' if (x == 1) else
-#       'bar' if (x == 2) else
-#       'baz' if (x == 3) else
-#       'qux' if (x == 4) else
-#       'quux'
-#  )
-=======
 x = 3
 
 s = ('foo' if (x == 1) else
@@ -83,5 +73,5 @@ s = ('foo' if (x == 1) else
       'baz' if (x == 3) else
       'qux' if (x == 4) else
       'quux'
- )
->>>>>>> atha
+)
+print(s, len(s), s[1])

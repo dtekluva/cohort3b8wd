@@ -4,7 +4,7 @@
 
 # print("WELCOME TO CLASS TODAY AND CHECK IF A WORD STARTS WITH (A).")
 # word=input("What is your name: ")
-# print(word.startswith("a"))
+# print(word.casefold().startswith("a"))
 
 # print("WELCOME TO CLASS TODAY AND CHECK IF YOUR NAME ENDS WITH (U).")
 # word=input("WHAT IS YOUR NAME: ")
@@ -56,7 +56,7 @@
 # print("UnivelCity admission requirement")
 # a = 26
 # y = input("How old are you : ")
-# # print(f"{a} is greater than {y} : {a} > {y}")
+# print(f"{a} is greater than {y} : {a} > {y}")
 
 # mynames = ["1", "2", "3"] 
 
@@ -133,11 +133,11 @@
 # # if d['a'] > 0:
 # #     print('ok')
 # # elif d['b'] > 0:
-# #     print('ok')
+# #     print('okay')
 # # elif d['c'] > 0:
-# #     print('ok')
+# #     print('okies')
 # # elif d['d'] > 0:
-# #     print('ok')
+# #     print('ok nah')
 # # else:
 # #     print('not ok')
 
@@ -196,8 +196,8 @@
 #     else:
 #         print("sorry, try again")
 
-# import time
-# from winsound import Beep
+import time
+from winsound import Beep
 
 # n = int(input("Enter a number to print - "))
 # multiplier = 1
@@ -208,14 +208,14 @@
 #     multiplier += 1
 #     Beep(200, 500)
 
-# LONG MULTIPLICATION
+##### LONG MULTIPLICATION
 # for i in range(1,13):
 #     for n in range(1,6):
 #         print(f"{n*i}".center(5), "|", end = "")
 #     print()
+    
 #     if i == 1:
 #         print()
-
 
 # sel_nos =  int(input("Enter a number to search through - "))
 # even_Nos = 0
@@ -230,9 +230,9 @@
 #         odd_Nos +=1
 #         print("odd_Nos", numbers)
 
-# LIST SLICING - DATA STRUCTURES
-combs = [1,2,3,4,5,6,7,8,9] 
-combs [1:]
+# ############### LIST SLICING - DATA STRUCTURES
+# combs = [1,2,3,4,5,6,7,8,9] 
+# combs [1:]
 # print(combs[2:7])
-combs[-len(combs):]
-print(combs[-len(combs):])
+# combs[-len(combs):]
+# # print(combs[-len(combs):])
