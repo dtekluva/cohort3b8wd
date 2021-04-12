@@ -1,19 +1,19 @@
-from time import sleep
-from winsound import Beep
-import winsound
+# from time import sleep
+# from winsound import Beep
+# import winsound
 
-minutes = int(input("Enter any number to countdown:- "))
+# minutes = int(input("Enter any number to countdown:- "))
 
-while minutes > 0:
+# while minutes > 0:
     
-    seconds = 60
-    minutes -= 1
+#     seconds = 60
+#     minutes -= 1
     
-    while seconds > 0:
-        seconds -= 1
-        print(f"{minutes}:{seconds} " , sep="",  end = '')   
-        sleep(1)
-        print("\r",end="" )
+#     while seconds > 0:
+#         seconds -= 1
+#         print(f"{minutes}:{seconds} " , sep="",  end = '')   
+#         sleep(1)
+#         print("\r",end="" )
 
 
 # staff_list = ['TAIWO',
@@ -38,7 +38,14 @@ while minutes > 0:
     
 #     if ask == message:
 #         sleep(1)
-#         print("Do have a safe trip back home.")
+#         print("Nice to know! Do have a safe trip back home.")
             
 # else:
 #     print("Sorry, you are not a registered staff of Liberty Assured!")
+
+
+def seye_calc(num):
+    return num**3
+    
+
+print(seye_calc(4))
