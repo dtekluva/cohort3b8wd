@@ -43,7 +43,8 @@ def extract_mandates(clean_file_name):
     print(f"\t1. {clean_file_name}\n\t2. {clean_file_name}-mandates-credits.csv\n")
 
     return {
-                "status":"success"
+                "status":"success",
+                "path": f"{clean_file_name}-mandates-credits.csv"
             }
 
     
