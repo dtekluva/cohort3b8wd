@@ -44,8 +44,10 @@
 #     print("Sorry, you are not a registered staff of Liberty Assured!")
 
 
-def seye_calc(num):
-    return num**3
+# def seye_calc(num):
+#     return num**3
     
 
-print(seye_calc(4))
+# print(seye_calc(4))
+
+import pandas as pd
