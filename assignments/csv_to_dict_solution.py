@@ -3,7 +3,7 @@ data = file.readlines()
 
 # print(data)
 table_head = data.pop(0) # remove and hold head of table
-# print(table_head)
+print(table_head)
 
 final_dict = {}
 

@@ -4,7 +4,7 @@
 # print(my_list)
 # print(my_list[2])
 
-# # slice from 0-4
+# slice from 0-4
 
 # my_slice = my_list[0:5]
 # print(my_slice)
@@ -13,8 +13,8 @@
 
 # my_slice= my_list[5:16]
 # print(my_slice)
-# # slice with interval
-# # slice takes [start:stop:step]
+# slice with interval
+# slice takes [start:stop:step]
 
 # my_slice = my_list[1:19:2]
 # print(my_slice)
@@ -32,13 +32,12 @@
 # x = max(my_list)
 # print(x)
 
-# # print(['foo', 'bar', 'baz', 'qux', 'quux', 'corge'][2])
-# x = ['a', ['bb', ['ccc', 'ddd'], 'ee', 'ff'], 'g', ['hh', 'ii'], 'j']
-# # print(len(x))
-# # for i in x:
-# #     print(i)
-
-# # print(x[1][1][0]) # deep indexing for a nested list 
+ print(['foo', 'bar', 'baz', 'qux', 'quux', 'corge'][2])
+x = ['a', ['bb', ['ccc', 'ddd'], 'ee', 'ff'], 'g', ['hh', 'ii'], 'j']
+ print(len(x))
+ for i in x:
+     print(i)
+     print(x[1][1][0]) # deep indexing for a nested list 
 
 # # altering list values
 
@@ -68,7 +67,7 @@
 
 # REQUESTS MODULE
 
-import requests
+# import requests
 
 # response = requests.get("https://api.jsonbin.io/b/60365ddaab68b51aec23336b/1")
 # data = response.content # raw data from requests
@@ -119,8 +118,8 @@ import requests
 #     print()
 # print(data.keys())
 
-api_key = "336b102582e7d317c464efd5e6ac86aa"
+# api_key = "336b102582e7d317c464efd5e6ac86aa"
 
-response = requests.get(f"http://api.openweathermap.org/data/2.5/forecast?id=7871736&APPID=336b102582e7d317c464efd5e6ac86aa")
+# response = requests.get(f"http://api.openweathermap.org/data/2.5/forecast?id=7871736&APPID=336b102582e7d317c464efd5e6ac86aa")
 
-print(response.json(), file = open("request_data.txt", "w"))
+# print(response.json(), file = open("request_data.txt", "w"))
