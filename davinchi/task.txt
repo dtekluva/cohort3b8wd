@@ -1,0 +1,3 @@
+New script for Remita to include durations (1 and 2 months)
+New script on remita for New clients on remita per months i.e Firat time clients month on month from Jan till date using datetimenow.
+
